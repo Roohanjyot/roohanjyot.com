@@ -10,7 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 80px 1fr 80px;
-    grid-template-rows: 80px 80px auto 80px auto;
+    grid-template-rows: 80px 15vh auto 15vh auto auto;
 }
 
 /* header & nav*/
@@ -41,13 +41,16 @@ nav a:hover, #header-btn-experience {
 }
 
 nav {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #ffce00;
+    width: 100vw;
     grid-template-columns: 4fr 4fr;
     align-items: center;
-    max-width: 1100px;
     margin: auto;
 }
-/* Nat geo logo */
+
 nav svg {
     height: 75px;
     width: auto;
@@ -120,7 +123,7 @@ article h3 {
 footer {
     display: grid;
     grid-column: 1 / 4;
-    grid-row: 5 / 6;
+    grid-row: 6 / 7;
     background-color: black;
     height: 230px;
     /* justify-content: center;

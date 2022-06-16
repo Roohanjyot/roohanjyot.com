@@ -6,11 +6,11 @@
 }
 /* body */
 body {
-    height: 100vh;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 80px 1fr 80px;
-    grid-template-rows: 80px 15vh auto 15vh auto auto;
+    grid-template-rows: 80px 80px auto 80px auto auto;
 }
 
 /* header & nav*/
@@ -116,6 +116,16 @@ article h3 {
     #view-card article {
         margin-top: 80px;
         width: 23.2rem;
+    }
+    nav svg {
+        opacity: 0;
+        width: 0;
+    }
+    nav {
+        justify-content: center;
+    }
+    body {
+        grid-template-columns: 0px auto 0px;
     }
 }
 

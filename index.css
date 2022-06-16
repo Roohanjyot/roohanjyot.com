@@ -1,0 +1,163 @@
+/** All elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/** body */
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 80px auto auto 80px;
+    background-color: #ffce00;
+}
+
+
+/** header*/
+header {
+    background-color: #ffce00;
+    overflow: hidden;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+    padding: 1.5rem;
+    font-weight: 700;
+    transition: all .35s ease;
+}
+
+nav a:hover, #header-btn-home {
+    color: white;
+    background-color: black;
+}
+
+nav {
+    /* new stuff */
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #ffce00;
+    width: 100%;
+    /* -- */
+    /* display: grid; */
+    grid-template-columns: 4fr 4fr;
+    align-items: center;
+    /* max-width: 1100px; */
+    margin: auto;
+}
+
+nav svg {
+    height: 75px;
+    width: auto;
+    padding: 2.5px;
+}
+
+/** main */
+
+main {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    flex-direction: column;
+}
+/** hero img */
+#hero-img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#hero-img img {
+    width: 100%;
+}
+/** welcome note */
+#hero-text * {
+    text-align: center;
+}
+#welcome-note {
+    color: white;
+    background-color: black;
+    padding: 2rem 4rem 2rem;
+    /* text-align: center; */
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+/** quote */
+#quote {
+    background-color: white;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.8rem;
+    padding: 1.2rem 0rem 1.2rem;
+}
+
+#bottom-bar {
+    position: fixed;
+    background-color: #ffce00;
+    height: 80px;
+    width: 100%;
+    bottom: 0px;
+}
+
+/** footer  */
+footer {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: black;
+    height: 230px;
+    grid-template-columns: 1fr 230px 230px 1fr;
+    grid-template-rows: 50px 1fr 1fr 80px;
+}
+
+#github {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-left: 50%;
+    padding-right: 0%;
+}
+
+#linkedin {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin-left: 20%;
+    padding-right: 0%;
+}
+
+footer h1 {
+    color: white;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    font-weight: 200;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+
+@media (max-width: 1100px) {
+    body {
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: 80px auto auto 20px;
+    }
+    #bottom-bar {
+        height: 20px;
+    }
+    nav svg {
+        opacity: 0;
+        width: 0;
+    }
+    nav {
+        justify-content: center;
+    }
+}

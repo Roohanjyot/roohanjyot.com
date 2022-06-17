@@ -155,7 +155,7 @@ footer h1 {
     }
     nav svg {
         opacity: 0;
-        width: 0;
+        width: 0px;
     }
     nav {
         justify-content: center;

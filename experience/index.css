@@ -109,7 +109,7 @@ article h3 {
     padding-top: .5rem;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     #view-card {
         flex-direction: column;
     }

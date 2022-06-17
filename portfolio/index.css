@@ -61,15 +61,6 @@ nav svg {
     padding: 2.5px;
 }
 
-@media (max-width: 1100px) {
-    nav {
-        justify-content: center;
-    }
-    nav svg {
-        opacity: 0;
-        width: 0px;
-    }
-}
 
 /** main */
 main {
@@ -113,7 +104,7 @@ main {
 .card ul li p {
     font-weight: 100;
     text-align: center;
-
+    
 }
 
 .card a {
@@ -165,13 +156,22 @@ main {
     background-color: var(--nat-geo-color);
 }
 
-@media (max-width:1100px) {
+
+@media (max-width: 1000px) {
+    nav {
+        justify-content: center;
+    }
+    nav svg {
+        opacity: 0;
+        width: 0px;
+    }
+
     main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
+    
     #center-card {
         background-color: var(--nat-geo-color);
     }

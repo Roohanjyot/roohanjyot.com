@@ -145,7 +145,7 @@ footer h1 {
     margin-left: 6rem;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     body {
         grid-template-columns: 20px auto 20px;
         grid-template-rows: 80px auto auto 20px;
